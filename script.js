@@ -28,8 +28,9 @@ function initGame() {
 }
 
 /*
-    The card will have the class 'card' and it would be a good idea to somehow save what its symbol is
+    The card will have the css class 'card' and it would be a good idea to somehow save what its symbol is
     within the element itself, since we'll need it for later and there's no easy way to get it from the arrays.
+    For this, you should look up the "dataset" property in HTML.
     Also make sure to add the event listener with the 'flipCard' function
 */
 function createCard(symbol) {
@@ -39,7 +40,7 @@ function createCard(symbol) {
 /*
     This function will handle all the logic for flipping the card. You can check if a variable doesn't
     have a value attached to it or is null by doing if (variable === null) {} or if (variable == null) {} or  if (!variable){}
-    If a card get's flipped, add the 'flipped' class and also display the symbol. 
+    If a card get's flipped, add the 'flipped' css class and also display the symbol. 
     Also, if this is the first card you picked, then set the firstCard variable to the card you just picked.
     If it's the second, then set the secondCard variable to it. Also, if that's the second card, then you 
     want to check for a match using the checkForMatch() function. 
